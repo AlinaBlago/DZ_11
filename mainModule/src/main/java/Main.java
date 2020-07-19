@@ -13,20 +13,19 @@ public class Main {
 
         System.out.println("\nTask 2");
         System.out.println("_____________________________");
-        ForwardLinkedList forwardLinkedList = new ForwardLinkedList();
-        forwardLinkedList.addBack(1.0);
-        forwardLinkedList.addBack(2);
-        forwardLinkedList.addBack("brrr");
-        forwardLinkedList.addFront(6);
+        ForwardLinkedList<Integer> list = new ForwardLinkedList<Integer>();
+        list.addBack(1);
+        list.addUp(10);
+        list.addBack(2);
+        list.addBack(3);
+        list.addBack(4);
+        list.print();
 
-        forwardLinkedList.print();
+        list.delete(1);
+        list.print();
 
-        forwardLinkedList.delete(3);
-        forwardLinkedList.print();
-
-        System.out.println(forwardLinkedList.size());
+        System.out.println("\nSize: " + list.size());
 
 
-        System.out.println();
     }
 }
